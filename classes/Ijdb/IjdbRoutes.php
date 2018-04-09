@@ -28,6 +28,12 @@ class IjdbRoutes implements \Ninja\Routes{
         $categoryController = new \Ijdb\Controllers\Category($this->categoriesTable);
 
         $routes = [
+			'login/permissionserror' => [
+				'GET' => [
+					'controller' => $loginController,
+					'action' => 'permissionsError',
+				],
+			],
             'author/permissions' => [
                 'GET' => [
                     'controller' => $authorController,

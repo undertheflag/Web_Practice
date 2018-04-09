@@ -37,7 +37,7 @@ class Category{
             return 0;
         }
 
-        return $aDate->getTimestamp() > $b->getTimestamp() ? -1 : 1;
+        return $aDate->getTimestamp() > $bDate->getTimestamp() ? -1 : 1;
     }
 
     public function getNumJokes(){
